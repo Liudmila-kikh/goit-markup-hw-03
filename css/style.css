@@ -46,7 +46,7 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-conteiner {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -333,7 +333,7 @@ img {
     padding-bottom: 16px;
 }
 
-.pagefooter {
+.page-footer {
     padding-top: 100px;
     padding-bottom: 100px;
     flex-direction: column;
