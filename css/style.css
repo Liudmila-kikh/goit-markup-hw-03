@@ -334,7 +334,8 @@ img {
 }
 
 .pagefooter {
-    padding: 100px 0 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     flex-direction: column;
 }
 
