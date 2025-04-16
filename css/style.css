@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -7,10 +13,38 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -23,8 +57,19 @@ a {
     color: #4d5ae5;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .header-logo .logo-part {
     color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-link {
@@ -33,6 +78,8 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
@@ -43,14 +90,24 @@ a {
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 
 .nav-link:hover,
@@ -62,6 +119,14 @@ a {
 
 .title {
     background-color: #2e2f42;
+    padding: 188px 0;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title-conteiner {
+    display: block;
+    align-items: center;
 }
 
 .title-title {
@@ -72,9 +137,15 @@ a {
     text-align: center;
     color: #fff;
     background: #2e2f42;
+    max-width: 496px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
 }
 
 .title-btn {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -83,11 +154,50 @@ a {
     background: #4d5ae5;
     text-align: center;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .title-btn:hover,
 .title-btn:focus {
     background: #404bbf;
+}
+
+/* section too */
+.advantages-conteiner {
+    margin: 0 auto;
+}
+
+.advantages {
+    padding: 120px 0;
+}
+
+.advantages-advantages {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-item {
+    min-width: 264px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-title {
@@ -96,7 +206,9 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
+
 
 .advantages-text {
     font-weight: 400;
@@ -106,15 +218,27 @@ a {
     color: #434455;
 }
 
+.team-conteiner {
+    text-align: center;
+}
+
 .team {
+    padding: 120px 0;
     background-color: #F4F4FD
 }
 
 .team-item {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 48px) / 3);
+}
+
+.team-card {
+    padding: 32px 0;
 }
 
 .team-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -124,6 +248,11 @@ a {
     color: #2e2f42;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 20px;
@@ -131,6 +260,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-position {
@@ -142,6 +272,23 @@ a {
     color: #434455;
 }
 
+.portfolio {
+    padding-top: 120px;
+    gap: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-item {
+    background-color: #FFFFFF;
+    flex-basis: calc((100% - 24px * 5) / 6);
+}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -150,6 +297,14 @@ a {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    background-color: #FFFFFF;
+    margin-bottom: 72px;
+}
+
+.portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-project {
@@ -158,6 +313,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .portfolio-text {
@@ -166,10 +322,25 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-bottom: 16px;
+}
+
+.pagefooter {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .page-footer {
@@ -182,4 +353,5 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
