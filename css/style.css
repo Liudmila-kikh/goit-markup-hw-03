@@ -131,7 +131,7 @@ img {
     padding: 188px 0;
 }
 
-.title-conteiner {
+.title-container {
     align-items: center;
 }
 
@@ -166,8 +166,9 @@ img {
     display: block;
     min-width: 169px;
     height: 56px;
-    border: none;
+    border: none
 }
+
 
 .title-btn:hover,
 .title-btn:focus {
@@ -175,7 +176,7 @@ img {
 }
 
 /* section too */
-.advantages-conteiner {
+.advantages-container {
     margin: 0 auto;
 }
 
@@ -224,7 +225,7 @@ img {
     color: #434455;
 }
 
-.team-conteiner {
+.team-container {
     text-align: center;
 }
 
