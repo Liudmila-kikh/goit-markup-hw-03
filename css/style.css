@@ -33,9 +33,8 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
+
 
 .container {
     max-width: 1158px;
@@ -281,8 +280,8 @@ img {
 }
 
 .portfolio {
-    padding: 120px 0;
-    gap: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-list {
